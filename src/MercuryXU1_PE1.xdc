@@ -91,7 +91,7 @@ set_property IOSTANDARD LVCMOS18 [get_ports {I2c_Sda}]
 # -------------------------------------------------------------------------------------------------
 
 
-create_clock -name rx_ref_clk   -period  4.00 [get_ports rx_ref_clk_clk_p]
+create_clock -name rx_ref_clk   -period  4.00 [get_ports rx_ref_clk_p]
 create_clock -name rx_div_clk   -period  6.40 [get_pins MercuryXU1_i/jesd/axi_jesd_xcvr/util_fmcjesdadc1_xcvr/inst/i_xch_0/i_gthe4_channel/RXOUTCLK]
 
 set_property ASYNC_REG TRUE [get_cells -hier -filter {name =~ *sysref_en_m*}]
