@@ -1490,6 +1490,9 @@ set_property range 1G [get_bd_addr_segs {jesd/adc_dma/axi_ad9250_1_dma/m_dest_ax
 set_property offset 0xC0000000 [get_bd_addr_segs {jesd/adc_dma/axi_ad9250_1_dma/m_dest_axi/SEG_zynq_ultra_ps_e_0_HPC1_DDR_LOW}]
 set_property range 1G [get_bd_addr_segs {jesd/axi_jesd_xcvr/axi_ad9250_xcvr/m_axi/SEG_zynq_ultra_ps_e_0_HPC0_DDR_LOW}]
 set_property offset 0xC0000000 [get_bd_addr_segs {jesd/axi_jesd_xcvr/axi_ad9250_xcvr/m_axi/SEG_zynq_ultra_ps_e_0_HPC0_DDR_LOW}]
+exclude_bd_addr_seg [get_bd_addr_segs jesd/adc_dma/axi_ad9250_0_dma/m_dest_axi/SEG_zynq_ultra_ps_e_0_HPC1_LPS_OCM]
+set_property range 1G [get_bd_addr_segs {jesd/adc_dma/axi_ad9250_0_dma/m_dest_axi/SEG_zynq_ultra_ps_e_0_HPC1_DDR_LOW}]
+set_property offset 0xC0000000 [get_bd_addr_segs {jesd/adc_dma/axi_ad9250_0_dma/m_dest_axi/SEG_zynq_ultra_ps_e_0_HPC1_DDR_LOW}]
 
   current_bd_instance $oldCurInst
   save_bd_design
